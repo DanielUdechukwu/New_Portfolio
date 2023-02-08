@@ -568,7 +568,7 @@ textarea{
     margin-bottom: 2rem;
   }
   .hero-img{
-    animation: slide-up 2.2s ease;
+    animation: slide-up 2.2 s ease;
   }
   #circle{
     display: none;
