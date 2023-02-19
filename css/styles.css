@@ -7,6 +7,10 @@
   font-family: 'Roboto';
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: var(--blue-grey);
   color: var(--white);
@@ -84,7 +88,7 @@ nav{
   padding: .8rem 1.5rem;
   font-size: .8rem;
   font-weight: 700;
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   border-radius: 2rem;
   outline-color: transparent;
   transition: all ease-in-out .2s;
@@ -188,8 +192,8 @@ nav{
 
 .hero-img img{
   width: 100%;
-  height: 28rem;
-  border-radius: 2rem;
+  height: 33rem;
+  border-radius: .5rem;
   object-fit: cover;
 }
 
@@ -199,7 +203,7 @@ nav{
   left: .5rem;
   font-size: .7rem;
   font-weight: 700;
-  color: var(--grey);
+  color: var(--white);
   animation: rotate 10s infinite;
   animation-timing-function: linear;
 }
@@ -328,42 +332,37 @@ nav{
 
 .grid-column{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: ;
   gap: 3.5rem;
 }
 
 .grid-item{
   width: 100%;
-  height: 34rem;
-  /* position: relative; */
-}
-
-.grid-item-row{
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-
-.grid-item-hidden{
-  display: none;
-}
-
-.sub-item{
-  height: 50%;  
+  height: 22rem;
+  margin-bottom: 6rem;
 }
 
 .grid-item img{
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
-  transition: all ease-in-out .2s;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  /* transition: all ease-in-out .2s; */
 }
 
-.grid-item img:hover{
+.grid-item p{
+  width: 80%;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+/* .grid-item img:hover{
   transform: scale(1.05);
-}
+} */
 
-.hover-text{
+/* .hover-text{
   display: none;
   position: absolute;
   bottom: 50%;
@@ -375,7 +374,7 @@ nav{
   font-size: 2rem;
   color: var(--white);
   padding-bottom: .5rem;
-}
+} */
 
 .project-header span{
   color: var(--blue-grey);
