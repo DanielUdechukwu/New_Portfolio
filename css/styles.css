@@ -340,7 +340,7 @@ nav{
 .grid-item{
   width: 100%;
   height: 22rem;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 .grid-item img{
@@ -348,7 +348,13 @@ nav{
   height: 100%;
   border-radius: .5rem;
   margin-bottom: 1rem;
-  /* transition: all ease-in-out .2s; */
+  object-fit: cover;
+  transition: all ease-in-out .3s;
+}
+
+.grid-item img:hover{
+  /* transform: scale(1.2); */
+  /* width: 120%; */
 }
 
 .grid-item p{
@@ -356,25 +362,8 @@ nav{
   font-size: .9rem;
   font-weight: 700;
   line-height: 1.3rem;
+  margin-bottom: 1.5rem;
 }
-
-/* .grid-item img:hover{
-  transform: scale(1.05);
-} */
-
-/* .hover-text{
-  display: none;
-  position: absolute;
-  bottom: 50%;
-  top: 50%;
-}
-
-.hover-text h4{
-  text-align: center;
-  font-size: 2rem;
-  color: var(--white);
-  padding-bottom: .5rem;
-} */
 
 .project-header span{
   color: var(--blue-grey);
@@ -382,6 +371,24 @@ nav{
 
 .project-description{
   text-align: center;
+}
+
+.view-project{
+  padding: 1rem 3rem;
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--rose);
+  border-radius: .4rem;
+  outline: transparent;
+  font-size: .8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+
+.view-project:hover{
+  background: var(--rose);
+  color: var(--dark-grey);
 }
 
 .contact{

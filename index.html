@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Danny.exe</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('MnqEiiyhcCLun7WWe');
+  </script>
 </head>
 <body>
   <header class="container-fluid">
@@ -147,47 +151,59 @@
         <h2 class="project-title">My <span>Projects</span></h2>
         <div class="d- grid-column">
           <div class="grid-item">
-            <img src="./assets/project-1.jpg" alt="">
+            <img src="./assets/Project1.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus illum pariatur in non adipisci</p>
+            <a href="https://danieludechukwu.github.io/Winterdevelopers" target="_blank">
+              <button class="view-project">View Project</button>
+            </a>
           </div>
           <div class="grid-item">
             <img src="./assets/project-2.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus
-              illum pariatur in non adipisci</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus illum pariatur in non adipisci</p>
+            <a href="">
+              <button class="view-project">View Project</button>
+            </a>
           </div>
           <div class="grid-item">
             <img src="./assets/project-3.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus
-              illum pariatur in non adipisci</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus illum pariatur in non adipisci</p>
+            <a href="">
+              <button class="view-project">View Project</button>
+            </a>
           </div>
           <div class="grid-item">
             <img src="./assets/project-4.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus
-              illum pariatur in non adipisci</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet aspernatur qui eos veniam magni voluptatibus illum pariatur in non adipisci</p>
+            <a href="">
+              <button class="view-project">View Project</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="container-fluid contact" id="contact-form">
+
       <div class="container">
         <h4 class="contact-text">Contact <span>Me</span></h4>
-        <form action="">
+        <form action="" id="form">
           <div class="input-area">
-            <label class="walahi" for="">What's your name?</label>
-            <input type="text" name="" id="" required placeholder="Full name">
+            <input type="hidden" name="to_name" value="Daniel">
+
+            <label class="walahi" for="from_name">What's your name?</label>
+            <input type="text" name="from_name" id="" required placeholder="Full name">
           </div>
           <div class="input-area">
-            <label for="">How can I reach you?</label>
-            <input type="email" name="" id="" required placeholder="hey@gmail.com">
+            <label for="reply_to">How can I reach you?</label>
+            <input type="email" name="reply_to" id="" required placeholder="hey@gmail.com">
           </div>
           <div class="input-area">
-            <label for="">What's your message?</label>
-            <textarea name="" id="" required placeholder="Hi Daniel, let's work!"></textarea>
+            <label for="message">What's your message?</label>
+            <textarea name="message" id="" required placeholder="Hi Daniel, let's work!"></textarea>
           </div>
 
           <div class="form-button">
-            <button type="submit">Send Message</button>
+            <button id="form-button" type="submit">Send Message</button>
           </div>
         </form>
       </div>
