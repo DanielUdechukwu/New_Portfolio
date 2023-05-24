@@ -237,6 +237,7 @@ nav{
 .stacks{
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .stacks h4{
